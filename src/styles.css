@@ -1,0 +1,262 @@
+/* Font Families */
+@font-face {
+    font-family: SF-Pro-Display-Light;
+    src: url('./fonts/SF-Pro-Display-Light.otf');
+}
+
+@font-face {
+    font-family: SF-Pro-Display-Regular;
+    src: url('./fonts/SF-Pro-Display-Regular.otf');
+}
+
+@font-face {
+    font-family: SF-Pro-Display-Medium;
+    src: url('./fonts/SF-Pro-Display-Medium.otf');
+}
+
+@font-face {
+    font-family: SF-Pro-Display-Semibold;
+    src: url('./fonts/SF-Pro-Display-Semibold.otf');
+}
+
+@font-face {
+    font-family: SF-Pro-Display-Bold;
+    src: url('./fonts/SF-Pro-Display-Bold.otf');
+}
+
+@font-face {
+    font-family: SF-Pro-Display-Heavy;
+    src: url('./fonts/SF-Pro-Display-Heavy.otf');
+}
+
+@font-face {
+    font-family: SF-Pro-Display-Black;
+    src: url('./fonts/SF-Pro-Display-Black.otf');
+}
+
+/* On styling fonts:
+* HTML - 1rem = 16px
+* Need to convert from pt (Figma) to px to rem
+*/
+
+/* General Stuff */
+a {
+    text-decoration: none;
+    color: #5081DF;
+}
+
+a:hover {
+    text-shadow: 1px 1px 2px #808080;
+    transition: text-shadow 100ms;
+}
+
+/* General Blocks */
+.block {
+    margin: 3% 0;
+}
+
+.block > .header {
+    font-family: SF-Pro-Display-Bold;
+    font-size: 1.5em;
+    margin-bottom: 1%;
+}
+
+.block > p {
+    margin: 0;
+}
+
+.block > .multi-content {
+    margin-bottom: 1%;
+}
+
+.block > .list-item {
+    margin-bottom: 0.5%;
+}
+
+/* Banner */
+.banner {
+    font-family: SF-Pro-Display-Heavy;
+    font-size: 2.75rem;
+}
+
+#banner-name {
+    color: black;
+}
+
+
+/* General Page */
+.content {
+/* Change back to width if mobile is too congested */
+    max-width: 1024px;
+    margin: 100px auto;
+    font-family: SF-Pro-Display-Regular;
+    font-size: 1.2rem;
+}
+
+/* Intro Block */
+#headshot {
+    height: 130px;
+    width: 130px;
+    vertical-align: center;
+}
+
+.title {
+    height: 120px;
+    font-size: 1.4rem;
+    margin-left: 2.5%;
+    margin-top: 0.2%;
+}
+
+.title > .education {
+    /* Keep as pixels so it doesn't vary along with automated typing */
+    margin: 5px 0;
+}
+
+.harvard {
+    font-family: SF-Pro-Display-Semibold;
+    color: #990000;
+}
+
+.title > .work {
+    margin: 0;
+}
+
+.cisco {
+    font-family: SF-Pro-Display-Semibold;
+    color: #007493;
+}
+
+.intro-block {
+    display: flex;
+    vertical-align: center;
+    height: 130px;
+    padding-bottom: 3%;
+}
+
+/* Professional Info Page */
+.webex {
+    color: #007493;
+}
+
+/* College Life Page */
+.datamatch {
+    color: #D38182
+}
+
+/* Project Component */
+.project > .project-name {
+    margin: 0;
+}
+
+.project > .project-content {
+    padding-left: 2.5%;
+    margin: 0;
+}
+
+.project > .multi-content {
+    margin-bottom: 1%;
+}
+
+.project > .project-duration {
+    color: #6B6B6B;
+}
+
+/* Project Tech Icons */
+span > img.icon {
+    margin: 0 2.5px;
+}
+
+span > img.firebase {
+    height: 17px;
+    width: 15px;
+    transition: 175ms;
+}
+
+span > img.firebase:hover {
+    height: 21.25px;
+    width: 18.75px;
+    transition: 175ms;
+}
+
+span > img.node {
+    height: 17px;
+    width: 27.75px;
+    transition: 175ms;
+}
+
+span > img.node:hover {
+    height: 21.25px;
+    width: 34.7px;
+    transition: 175ms;
+}
+
+span > img.ocaml {
+    height: 17px;
+    width: 17px;
+    transition: 175ms;
+}
+
+span > img.ocaml:hover {
+    height: 21.25px;
+    width: 21.25px;
+    transition: 175ms;
+}
+
+span > img.react {
+    height: 17px;
+    width: 19px;
+    transition: 175ms;
+}
+
+span > img.react:hover {
+    height: 21.25px;
+    width: 23.75px;
+    transition: 175ms;
+}
+
+span > img.redux {
+    height: 17px;
+    width: 18.8px;
+    transition: 175ms;
+}
+
+span > img.redux:hover {
+    height: 21.25px;
+    width: 23.5px;
+    transition: 175ms;
+}
+
+span > img.swift {
+    height: 17px;
+    width: 17px;
+    transition: 175ms;
+}
+
+span > img.swift:hover {
+    height: 21.25px;
+    width: 21.25px;
+    transition: 175ms;
+}
+
+span > img.yelp-fusion {
+    height: 17px;
+    width: 12.8px;
+    transition: 175ms;
+}
+
+span > img.yelp-fusion:hover {
+    height: 21.25px;
+    width: 16px;
+    transition: 175ms;
+}
+
+/* Book */
+span.author {
+    color: #6B6B6B;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 5%;
+}

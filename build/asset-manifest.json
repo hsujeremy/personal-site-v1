@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a6d471f6.chunk.css",
+    "main.js": "/static/js/main.58676241.chunk.js",
+    "main.js.map": "/static/js/main.58676241.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ec2d9410.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ec2d9410.js.map",
+    "static/js/2.9bb9ad91.chunk.js": "/static/js/2.9bb9ad91.chunk.js",
+    "static/js/2.9bb9ad91.chunk.js.map": "/static/js/2.9bb9ad91.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8f0848f3a8e6a4c6e39bcc09d45f0f76.js": "/precache-manifest.8f0848f3a8e6a4c6e39bcc09d45f0f76.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.a6d471f6.chunk.css.map": "/static/css/main.a6d471f6.chunk.css.map",
+    "static/js/2.9bb9ad91.chunk.js.LICENSE.txt": "/static/js/2.9bb9ad91.chunk.js.LICENSE.txt",
+    "static/media/Jeremy-Hsu-Resume.pdf": "/static/media/Jeremy-Hsu-Resume.b71fe7f6.pdf",
+    "static/media/styles.css": "/static/media/SF-Pro-Display-Semibold.e570ec81.otf",
+    "static/media/firebase.png": "/static/media/firebase.e12ab8c7.png",
+    "static/media/headshot.png": "/static/media/headshot.fc74b8f6.png",
+    "static/media/node.png": "/static/media/node.f8dab57d.png",
+    "static/media/ocaml.png": "/static/media/ocaml.0a5ee69d.png",
+    "static/media/react.png": "/static/media/react.48fd6cfb.png",
+    "static/media/redux.png": "/static/media/redux.afb369f7.png",
+    "static/media/swift.png": "/static/media/swift.fc9bfbc5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ec2d9410.js",
+    "static/js/2.9bb9ad91.chunk.js",
+    "static/css/main.a6d471f6.chunk.css",
+    "static/js/main.58676241.chunk.js"
+  ]
+}
