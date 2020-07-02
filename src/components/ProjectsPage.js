@@ -39,7 +39,7 @@ export class ProjectsPage extends Component {
                 <Project description={project.description}
                          duration={project.duration}
                          emoji={project.emoji}
-                         key={project.name}
+                         key={project.key}
                          name={project.name}
                          predescription={project.predescription}
                          tech={project.tech}

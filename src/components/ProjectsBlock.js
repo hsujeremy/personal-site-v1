@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Project } from './Project';
 import { Link } from 'react-router-dom';
-import '../styles.css';
 import { database } from '../config';
+import '../styles.css';
 
 
 export class ProjectsBlock extends Component {
@@ -19,7 +19,7 @@ export class ProjectsBlock extends Component {
             });
             this.setState({
                 projects: projects.sort((project1, project2) =>
-                                            project2.featured - project1.featured) 
+                                            project2.featured - project1.featured)
             });
         });
     }
@@ -29,7 +29,7 @@ export class ProjectsBlock extends Component {
             <Project description={project.description}
                      emoji={project.emoji}
                      name={project.name}
-                     key={project.name}
+                     key={project.key}
             />
         ));
 
