@@ -5,7 +5,7 @@ import { Footer } from './Footer';
 import { database } from '../config';
 
 
-export class ClassesPage extends React.Component {
+export class ClassesPage extends Component {
     constructor(props) {
         super(props);
         this.state = { terms: [] };
@@ -25,14 +25,11 @@ export class ClassesPage extends React.Component {
 
     render() {
         let allCoursesList = this.state.terms.map(term => {
-            let courses = [];
-            for (const prop in term) {
-                courses.push(term[prop]);
-            }
-            let something = [1, 2, 3]
             let indices = Object.keys(term).slice(0, -1);
             let courseList = indices.map(i =>
-                (<p><Emoji symbol={term[i].emoji} /> {term[i].number}: {term[i].name}</p>));
+                <p><Emoji symbol={term[i].emoji} />
+                    {term[i].number}: {term[i].name}
+                </p>);
 
             return (
                 <div className='block'>
