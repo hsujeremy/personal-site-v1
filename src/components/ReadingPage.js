@@ -1,51 +1,34 @@
 import React, { Component } from 'react';
 import { Banner } from './Banner';
 import { Book } from './Book';
-import { Footer } from './Footer';
-import { database } from '../config';
-import '../styles.css';
+import data from '../assets/content-data.json';
 
 
 export class ReadingPage extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { periods: [] };
-    }
-
     componentDidMount() {
-        database.ref('books/').once('value').then(snapshot => {
-            let periods = [];
-            snapshot.forEach(snap => {
-                periods[snap.key] = snap.val();
-            });
-            this.setState({
-                periods: periods.sort((period1, period2) => -1)
-            });
-        })
+        window.scrollTo(0, 0);
+        document.title = 'Jeremy\'s Books';
     }
 
     render() {
-        let allBooksList = this.state.periods.map(period => {
-            let indices = Object.keys(period).slice(0, -1).reverse();
-            let bookList = indices.map(i =>
-                <Book emoji={period[i].emoji}
-                      title={period[i].title}
-                      author={period[i].author}
-                />);
-
+        let allBooksList = Object.keys(data.books).map(index => {
+            let books = data.books[index];
+            let bookList = books.slice(1).map(({ emoji, title, author }) => {
+                return <Book emoji={emoji} title={title} author={author} key={title} />
+            })
+            let header = books[0];
             return (
-                <div className='block'>
-                    <div className='header'>{period.header}</div>
+                <div className='block' key={header}>
+                    <div className='header'>{header}</div>
                     {bookList}
                 </div>
             );
-        });
+        })
 
         return (
             <div className='content'>
                 <Banner keywords={['Books I\'ve Read']} loop={false} />
                 {allBooksList}
-                <Footer date={'July 2 2020'} />
             </div>
         );
     }

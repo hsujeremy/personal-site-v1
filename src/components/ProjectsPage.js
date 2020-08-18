@@ -1,36 +1,13 @@
 import React, { Component } from 'react';
 import { Banner } from './Banner';
 import { Project } from './Project';
-import { Footer } from './Footer';
-import { database } from '../config';
-import '../styles.css';
+import data from '../assets/content-data.json';
 
 
 export class ProjectsPage extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            currentProjects: [],
-            pastProjects: []
-        };
-    }
-
     componentDidMount() {
-        database.ref('projects/').once('value').then(snapshot => {
-            let currentProjects = [];
-            let pastProjects = [];
-            snapshot.forEach(snap => {
-                snap.val().endDate ?
-                pastProjects.push(snap.val()) :
-                currentProjects.push(snap.val());
-            });
-            this.setState({
-                currentProjects: currentProjects.sort((project1, project2) =>
-                                                          project2.startDate - project2.startDate),
-                pastProjects: pastProjects.sort((project1, project2) =>
-                                                    project2.endDate - project1.endDate)
-             });
-        });
+        window.scrollTo(0, 0);
+        document.title = "Jeremy's Projects"
     }
 
     render() {
@@ -39,7 +16,7 @@ export class ProjectsPage extends Component {
                 <Project description={project.description}
                          duration={project.duration}
                          emoji={project.emoji}
-                         key={project.key}
+                         key={project.name}
                          name={project.name}
                          predescription={project.predescription}
                          tech={project.tech}
@@ -47,17 +24,29 @@ export class ProjectsPage extends Component {
             ))
         );
 
+        let compareRecency = (project1, project2) => {
+            if (!project1.endDate && !project2.endDate)
+                return project2.startDate - project1.startDate;
+            else if (!project1.endDate)
+                return -1;
+            else if (!project2.endDate)
+                return 1;
+            return project2.endDate - project1.endDate;
+        }
+
+        let currentProjects = data.projects.filter(({ endDate }) => !endDate).sort(compareRecency);
+        let pastProjects = data.projects.filter(({ endDate }) => endDate).sort(compareRecency);
+
         return (
             <div className='content'>
                 <Banner keywords={['All Projects']} loop={false} />
                 <div className='block'>
                     <div className='header'>In Active Development</div>
-                    <div>{createProjectList(this.state.currentProjects)}</div>
+                    <div>{createProjectList(currentProjects)}</div>
                 </div>
                 <div className='block'>
                     <div className='header'>Completed / Archived</div>
-                    <div>{createProjectList(this.state.pastProjects)}</div>
-                    <Footer date={'May 24 2020'} />
+                    <div>{createProjectList(pastProjects)}</div>
                 </div>
             </div>
         );

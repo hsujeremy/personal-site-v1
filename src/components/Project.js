@@ -1,7 +1,6 @@
 import React from 'react';
 import { Emoji } from './Emoji';
 import { ProjectTech } from './ProjectTech';
-import '../styles.css';
 
 
 export const Project = ({ emoji, name, duration, predescription, description, tech }) => (

@@ -1,41 +1,47 @@
 import React from 'react';
-import '../styles.css';
 
 
 // Create icons
 let firebase = <img className='icon ocaml'
                  src={ require('../images/firebase.png') }
                  alt='Firebase'
+                 key='Firebase'
             />;
 
 let node = <img className='icon ocaml'
                  src={ require('../images/node.png') }
                  alt='Node'
+                 key='Node'
             />;
 
 let ocaml = <img className='icon ocaml'
                  src={ require('../images/ocaml.png') }
                  alt='OCaml'
+                 key='OCaml'
             />;
 
 let react = <img className='icon ocaml'
                  src={ require('../images/react.png') }
                  alt='React'
+                 key='React'
             />;
 
 let redux = <img className='icon ocaml'
                  src={ require('../images/redux.png') }
                  alt='Redux'
+                 key='Redux'
             />;
 
 let swift = <img className='icon ocaml'
                  src={ require('../images/swift.png') }
                  alt='Swift'
+                 key='Swift'
             />;
 
 let yelpFusion = <img className='icon ocaml'
                  src={ require('../images/yelp-fusion.png') }
-                 alt='Yellp Fusion'
+                 alt='Yelp Fusion'
+                 key='Yelp Fusion'
             />;
 // Place icons in object
 let icons = {

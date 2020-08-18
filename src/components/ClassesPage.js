@@ -1,49 +1,33 @@
 import React, { Component } from 'react';
 import { Emoji } from './Emoji';
 import { Banner } from './Banner';
-import { Footer } from './Footer';
-import { database } from '../config';
+import data from '../assets/content-data.json';
 
 
 export class ClassesPage extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { terms: [] };
-    }
-
     componentDidMount() {
-        database.ref('courses/').once('value').then(snapshot => {
-            let terms = [];
-            snapshot.forEach(snap => {
-                terms[snap.key] = snap.val();
-            });
-            this.setState({
-                terms: terms.sort((term1, term2) => -1)
-            });
-        })
+        window.scrollTo(0, 0);
+        document.title = 'Jeremy\'s Courses';
     }
 
     render() {
-        let allCoursesList = this.state.terms.map(term => {
-            let indices = Object.keys(term).slice(0, -1);
-            let courseList = indices.map(i =>
-                <p><Emoji symbol={term[i].emoji} />
-                    {term[i].number}: {term[i].name}
-                </p>);
-
+        let allCoursesList = Object.keys(data.courses).map(i => {
+            let courses = data.courses[i];
+            let courseList = courses.slice(1).map(({ emoji, number, name }) =>
+                <p key={name}><Emoji symbol={emoji} /> {number}: {name}</p>);
+            let header = courses[0];
             return (
-                <div className='block'>
-                    <div className='header'>{term.termString}</div>
+                <div className='block' key={header}>
+                    <div className='header'>{header}</div>
                     {courseList}
                 </div>
-            );
+            )
         });
 
         return (
             <div className='content'>
                 <Banner keywords={['All Courses']} loop={false}/>
                 {allCoursesList}
-                <Footer date={'May 24 2020'} />
             </div>
         );
     };

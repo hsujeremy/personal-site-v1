@@ -1,26 +1,19 @@
 import React from 'react';
 import { Banner } from './Banner';
 import { Hyperlink } from './Hyperlink';
-import '../styles.css';
 
-/* Harvard Hyperlink prop values */
-let hClass = 'harvard';
-let hHref = 'https://www.harvard.edu';
-let hText = 'Harvard';
 
-/* Cisco Hyperlink prop values */
-let cClass = 'cisco';
-let cHref = 'https://www.cisco.com';
-let cText = 'Cisco Systems';
+let harvard = ['harvard', 'https://www.harvard.edu', 'Harvard'];
+let cisco = ['cisco', 'https://www.cisco.com', 'Cisco Systems'];
 
 export const Title = () => (
     <div className='title'>
         <Banner keywords={['Software Engineer', '^500 Student', '^500 Designer']} />
         <p className='education'>
-            Computer Science @ <Hyperlink cl={hClass} href={hHref} text={hText} />
+            Computer Science @ <Hyperlink cl={harvard[0]} href={harvard[1]} text={harvard[2]} />
         </p>
         <p className='work'>
-            SWE @ <Hyperlink cl={cClass} href={cHref} text={cText} />
+            Software Engineering @ <Hyperlink cl={cisco[0]} href={cisco[1]} text={cisco[2]} />
         </p>
     </div>
 );

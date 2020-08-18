@@ -1,21 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { IntroBlock } from './IntroBlock';
 import { AboutBlock } from './AboutBlock';
 import { ProfessionalBlock } from './ProfessionalBlock';
 import { CollegeBlock } from './CollegeBlock';
 import { ProjectsBlock } from './ProjectsBlock';
 import { OtherBlock } from './OtherBlock';
-import { Footer } from './Footer';
 import '../styles.css';
 
-export const Home = () => (
-    <div className='content'>
-        <IntroBlock />
-        <AboutBlock />
-        <ProfessionalBlock />
-        <CollegeBlock />
-        <ProjectsBlock />
-        <OtherBlock />
-        <Footer date='June 27 2020' />
-    </div>
-);
+
+export class Home extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+        document.title = 'Jeremy Hsu'
+    }
+
+    render() {
+        return (
+            <div className='content'>
+                <IntroBlock />
+                <AboutBlock />
+                <ProfessionalBlock />
+                <CollegeBlock />
+                <ProjectsBlock />
+                <OtherBlock />
+            </div>
+        );
+    }
+};

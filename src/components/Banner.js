@@ -1,7 +1,6 @@
 import React from 'react';
 import Typed from 'react-typed';
 import { Link } from 'react-router-dom';
-import '../styles.css';
 
 
 export const Banner = ({ keywords, loop }) => {

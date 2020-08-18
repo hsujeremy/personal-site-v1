@@ -1,7 +1,7 @@
 import React from 'react';
 import { Emoji } from './Emoji';
 import { Link } from 'react-router-dom';
-import '../styles.css';
+
 
 export const OtherBlock = () => (
     <div className='block'>

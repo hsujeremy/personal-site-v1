@@ -2,16 +2,16 @@ import React from 'react';
 import { Emoji } from './Emoji';
 import { Hyperlink } from './Hyperlink';
 import Pdf from '../assets/Jeremy-Hsu-Resume.pdf';
-import '../styles.css';
+
 
 /* Cisco Webex prop values */
 let cClass = 'webex';
 let cHref = 'https://www.webex.com';
-let cText = 'Cisco Webex';
+let cText = 'Cisco Collaboration';
 
 /* Linkedin hyperlink */
 let lHref = 'https://www.linkedin.com/in/jeremy-hsu/';
-let lText = 'Linkedin';
+let lText = 'LinkedIn';
 let linkedin = <Hyperlink href={lHref} text={lText} />;
 
 /* GitHub hyperlink */
@@ -30,7 +30,7 @@ export const ProfessionalBlock = () => (
         <div className='header'>Professional Info</div>
         <p className='multi-content'>
             I'm currently interning as a software engineer
-            at <Hyperlink cl={cClass} href={cHref} text={cText} />.
+            at <Hyperlink cl={cClass} href={cHref} text={cText} /> until May 2021.
         </p>
         <p>
             <Emoji symbol='🎬 ' />

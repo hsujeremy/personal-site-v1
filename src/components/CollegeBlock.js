@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Hyperlink } from './Hyperlink';
-import '../styles.css';
+
 
 let dmClass = 'datamatch';
 let dmHref = 'https://quarantine.datamatch.me/';
@@ -10,9 +10,10 @@ let dmText = 'Datamatch';
 export const CollegeBlock = () => (
     <div className='block'>
         <div className='header'>College Life</div>
+        <p className='multi-content'>I'm on a leave of absence at the moment and intend on returning to Harvard in September 2021.</p>
         <p className='multi-content'>
-            This spring, my technical course load covered programming abstractions and
-            paradigms, linear algebra, and differential equations. I also studied the
+            Last spring, my technical course load covered functional programming,
+            linear algebra, and differential equations. I also studied the
             product development process and worked closely with my classmates in
             pitching two app designs integrating effective and inclusive UI design
             practices.

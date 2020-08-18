@@ -1,6 +1,6 @@
 import React from 'react';
 import { Emoji } from './Emoji';
-import '../styles.css';
+
 
 export const Book = ({ emoji, title, author }) => (
     <p>

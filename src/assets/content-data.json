@@ -1,0 +1,259 @@
+{
+    "books": {
+        "current": [
+        "Currently Reading",
+            {
+                "author": "Bryan Stevenson",
+                "emoji": "🕰",
+                "title": "Just Mercy: A Story of Justice and Redemption"
+            }
+        ],
+        "y2020": [
+            "So Far in 2020",
+            {
+                "author": "Dale Carnegie",
+                "emoji": "😎",
+                "title": "How to Win Friends and Influence People"
+            },
+            {
+                "author": "Seth Godin",
+                "emoji": "🧾",
+                "title": "This is Marketing"
+            },
+            {
+                "author": "Sally Rooney",
+                "emoji": "👨‍👩‍👧‍👦",
+                "title": "Normal People"
+            },
+            {
+                "author": "Park Yeon-mi",
+                "emoji": "🎎",
+                "title": "In Order to Live"
+            },
+            {
+                "author": "George Orwell",
+                "emoji": "🧸",
+                "title": "1984"
+            },
+            {
+                "author": "Robin DiAngelo",
+                "emoji": "🙅🏻‍♂️",
+                "title": "White Fragility"
+            },
+            {
+                "author": "Steven Pinker",
+                "emoji": "🤯",
+                "title": "Enlightenment Now"
+            },
+            {
+                "author": "Robert Iger",
+                "emoji": "🏰",
+                "title": "The Ride of a Lifetime"
+            },
+            {
+                "author": "Maya Angelou",
+                "emoji": "🕊️",
+                "title": "I Know Why the Caged Bird Sings"
+            },
+            {
+                "author": "Donald Miller",
+                "emoji": "🛣",
+                "title": "A Million Miles in a Thousand Years"
+            },
+            {
+                "author": "Ashlee Vance",
+                "emoji": "🚀",
+                "title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future"
+            }
+        ],
+        "y2019": [
+            "In 2019",
+            {
+                "author": "Mihaly Csikszentmihalyi",
+                "emoji": "🔮",
+                "title": "Flow"
+            },
+            {
+                "author": "Viktor Frankl",
+                "emoji": "🧗🏽",
+                "title": "Man's Search for Meaning"
+            },
+            {
+                "author": "Jeff Eugenides",
+                "emoji": "🌋",
+                "title": "Middlesex"
+            },
+            {
+                "author": "Tim Ferriss",
+                "emoji": "⏰",
+                "title": "The 4-Hour Work Week"
+            },
+            {
+                "author": "Leander Kahney",
+                "emoji": "👱🏻‍♂️",
+                "title": "Tim Cook: The Genius Who Took Apple to the Next Level"
+            },
+            {
+                "author": "Stephen Covey",
+                "emoji": "🛠",
+                "title": "The 7 Habits of Highly Effective People"
+            },
+            {
+                "author": "Tara Westover",
+                "emoji": "📕",
+                "title": "Educated: A Memoir"
+            },
+            {
+                "author": "Charles Dickens",
+                "emoji": "🧵",
+                "title": "Great Expectations"
+            },
+            {
+                "author": "Paul Coelho",
+                "emoji": "🍯",
+                "title": "The Alchemist"
+            },
+            {
+                "author": "Phil Knight",
+                "emoji": "👟",
+                "title": "Shoe Dog"
+            },
+            {
+                "author": "Michelle Obama",
+                "emoji": "👩🏾‍⚖️",
+                "title": "Becoming"
+            }
+        ],
+        "y2018": [
+            "Before 2019 - The Ones That Stuck",
+            {
+                "author": "Aldous Huxley",
+                "emoji": "🎞️",
+                "title": "Brave New World"
+            },
+            {
+                "author": "Sinclair Lewis",
+                "emoji": "🏘️",
+                "title": "Main Street"
+            },
+            {
+                "author": "Sinclair Lewis",
+                "emoji": "🔬",
+                "title": "Arrowsmith"
+            },
+            {
+                "author": "Sinclair Lewis",
+                "emoji": "🤵🏻",
+                "title": "Babbitt"
+            },
+            {
+                "author": "F. Scott Fitzgerald",
+                "emoji": "🏆",
+                "title": "The Great Gatsby"
+            },
+            {
+                "author": "Charles Dickens",
+                "emoji": "🎪",
+                "title": "A Tale of Two Cities"
+            },
+            {
+                "author": "Toni Morrison",
+                "emoji": "🧨",
+                "title": "Song of Solomon"
+            }
+        ]
+    },
+    "courses": {
+        "2020spring": [
+            "Spring 2020",
+            {
+                "emoji": "📸",
+                "name": "Abstraction and Design in Computation",
+                "number": "CS 51"
+            },
+            {
+                "emoji": "🎁",
+                "name": "Design of Useful and Usable Interactive Systems",
+                "number": "CS 179"
+            },
+            {
+                "emoji": "🛠",
+                "name": "Linear Algebra and Differential Equations",
+                "number": "Math 21b"
+            },
+            {
+                "emoji": "📈",
+                "name": "The Transformation of Marketing",
+                "number": "FRSEMR 40d"
+            }
+        ],
+        "2019fall": [
+            "Fall 2019",
+            {
+                "emoji": "📱",
+                "name": "Introduction to Computer Science",
+                "number": "CS 50"
+            },
+            {
+                "emoji": "📦",
+                "name": "Multivariable Calculus",
+                "number": "Math 21a"
+            },
+            {
+                "emoji": "💸",
+                "name": "Principles of Microeconomics",
+                "number": "Ec 10a"
+            },
+            {
+                "emoji": "🛣",
+                "name": "Narrating Immigration",
+                "number": "Expos 20"
+            }
+        ]
+    },
+    "projects": [
+        {
+            "description": "A web app that automates various components of the course scheduling process. I worked closely with another classmate and my high school’s administration to help them improve efficiency during the course selection period.",
+            "duration": "January 2019 - March 2019",
+            "emoji": "🖨",
+            "endDate": 201903,
+            "name": "Automated Course Scheduling",
+            "tech": [ "firebase", "node" ]
+        },
+        {
+            "description": "A web app that streamlines the process of ordering food. Integrating the Yelp Fusion API, users can find restaurants based on various criteria and schedule meal times on their calendar based on the hours for that specific place and time.",
+            "duration": "December 2019 - January 2020",
+            "emoji": "🍱",
+            "endDate": 202001,
+            "name": "FoodSpace",
+            "tech": [ "firebase", "node", "react", "redux" ]
+        },
+        {
+            "description": "An interpreter for OCaml following the substitution, lexically-scoped environment, and dynamically-scoped environment semantic models.",
+            "duration": "April 2020 - May 2020",
+            "emoji": "🎥",
+            "endDate": 202005,
+            "featured": true,
+            "name": "MiniML",
+            "tech": [ "ocaml" ]
+        },
+        {
+            "description": "Currently working on overhauling the UI and linking a Firebase database to allow for more seamless data entry.",
+            "duration": "July 2019 - Present",
+            "emoji": "🕯",
+            "name": "Personal Site",
+            "predescription": "A website to showcase various parts of my personal and professional life.",
+            "startDate": 201907,
+            "tech": [ "firebase", "react" ]
+        },
+        {
+            "description": "An iOS app serving as a centralized database for roommates with features including roommate profiles, embedded messaging, and shared task lists.",
+            "duration": "November 2019 - December 2019",
+            "emoji": "🏡",
+            "endDate": 201912,
+            "featured": true,
+            "name": "RoommateHub",
+            "tech": [ "firebase", "swift" ]
+        }
+    ]
+}
