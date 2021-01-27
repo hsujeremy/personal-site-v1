@@ -1,3 +1,3 @@
 # Personal Site
 
-Full frontend website built on ReactJS showcasing my professional and personal life. Hosted with Firebase. 
+React website hosted on Firebase that showcases parts of my professional and personal life.

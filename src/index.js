@@ -4,6 +4,7 @@ import { Home } from './components/Home.js';
 import { ClassesPage } from './components/ClassesPage.js';
 import { ProjectsPage } from './components/ProjectsPage.js';
 import { ReadingPage } from './components/ReadingPage.js';
+import { DogsPage } from './components/DogsPage.js';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 render(
@@ -13,6 +14,7 @@ render(
             <Route path='/classes' component={ClassesPage} />
             <Route path='/projects' component={ProjectsPage} />
             <Route path='/books' component={ReadingPage} />
+            <Route path='/dogs' component={DogsPage} />
         </Switch>
     </BrowserRouter>,
     document.getElementById('root')

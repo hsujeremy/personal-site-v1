@@ -43,12 +43,10 @@ export const ProfessionalBlock = () => (
             I'm also seeking a software engineering internship role!
         </p>
         <p>
-            <Emoji symbol='🎬 ' />
-            {linkedin} · {github} · {resume}
+            <Emoji symbol='🎬 ' /> {linkedin} · {github} · {resume}
         </p>
         <p>
-            <Emoji symbol='📮 ' />
-            Email: <a href={eHref}> jeremyhsu@college.harvard.edu </a>
+            <Emoji symbol='📮 ' /> Email: <a href={eHref}> jeremyhsu@college.harvard.edu </a>
         </p>
     </div>
 );
