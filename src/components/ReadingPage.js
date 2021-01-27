@@ -7,16 +7,17 @@ import data from '../assets/content-data.json';
 export class ReadingPage extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
-        document.title = 'Jeremy\'s Books';
+        document.title = 'Jeremy - Books';
     }
 
     render() {
         let allBooksList = Object.keys(data.books).map(index => {
-            let books = data.books[index];
-            let bookList = books.slice(1).map(({ emoji, title, author }) => {
+            let books = data.books[index].slice(1).reverse();
+
+            let header = data.books[index][0];
+            let bookList = books.map(({ emoji, title, author }) => {
                 return <Book emoji={emoji} title={title} author={author} key={title} />
-            })
-            let header = books[0];
+            });
             return (
                 <div className='block' key={header}>
                     <div className='header'>{header}</div>

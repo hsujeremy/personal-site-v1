@@ -1,15 +1,29 @@
 {
     "books": {
         "current": [
-        "Currently Reading",
+            "Currently Reading",
             {
-                "author": "Bryan Stevenson",
-                "emoji": "🕰",
-                "title": "Just Mercy: A Story of Justice and Redemption"
+                "author": "Yuval Noah Harari",
+                "emoji": "🚶‍♂️",
+                "title": "Sapiens: A Brief History of Humankind"
+            },
+
+            {
+                "author": "Barack Obama",
+                "emoji": "🦅",
+                "title": "A Promised Land"
+            }
+        ],
+        "y2021": [
+            "In 2021",
+            {
+                "author": "Reed Hastings and Erin Meyer",
+                "emoji": "🧮",
+                "title": "No Rules Rules: Netflix and the Culture of Reinvention"
             }
         ],
         "y2020": [
-            "So Far in 2020",
+            "In 2020",
             {
                 "author": "Dale Carnegie",
                 "emoji": "😎",
@@ -36,11 +50,6 @@
                 "title": "1984"
             },
             {
-                "author": "Robin DiAngelo",
-                "emoji": "🙅🏻‍♂️",
-                "title": "White Fragility"
-            },
-            {
                 "author": "Steven Pinker",
                 "emoji": "🤯",
                 "title": "Enlightenment Now"
@@ -64,6 +73,11 @@
                 "author": "Ashlee Vance",
                 "emoji": "🚀",
                 "title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future"
+            },
+            {
+                "author": "Bryan Stevenson",
+                "emoji": "🕰",
+                "title": "Just Mercy: A Story of Justice and Redemption"
             }
         ],
         "y2019": [

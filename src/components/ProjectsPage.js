@@ -7,7 +7,7 @@ import data from '../assets/content-data.json';
 export class ProjectsPage extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
-        document.title = "Jeremy's Projects"
+        document.title = "Jeremy - Projects"
     }
 
     render() {

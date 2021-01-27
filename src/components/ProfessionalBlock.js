@@ -4,10 +4,13 @@ import { Hyperlink } from './Hyperlink';
 import Pdf from '../assets/Jeremy-Hsu-Resume.pdf';
 
 
-/* Cisco Webex prop values */
 let cClass = 'webex';
-let cHref = 'https://www.webex.com';
-let cText = 'Cisco Collaboration';
+let cHref = 'https://www.cisco.com';
+let cText = 'Cisco'
+/* Cisco Webex prop values */
+let wClass = 'webex';
+let wHref = 'https://www.webex.com';
+let wText = 'Webex Media Engine';
 
 /* Linkedin hyperlink */
 let lHref = 'https://www.linkedin.com/in/jeremy-hsu/';
@@ -29,8 +32,15 @@ export const ProfessionalBlock = () => (
     <div className='block'>
         <div className='header'>Professional Info</div>
         <p className='multi-content'>
-            I'm currently interning as a software engineer
-            at <Hyperlink cl={cClass} href={cHref} text={cText} /> until May 2021.
+            Since last May, I've been interning as a software engineer at <Hyperlink cl={cClass} href={cHref} text={cText} /> on
+            the <Hyperlink cl={wClass} href={wHref} text={wText} /> team. At Cisco, my responsibilities span a variety of
+            projects, but my main contributions so far have involved expanding and automating components of our internal
+            triage and debugging tools as well as helping to monitor media quality performance metrics and troubleshoot
+            problem areas.
+        </p>
+        <p className='multi-content'>
+            This summer, I'm looking to conduct research with the Harvard Cloud Networking and Systems group.
+            I'm also seeking a software engineering internship role!
         </p>
         <p>
             <Emoji symbol='🎬 ' />
