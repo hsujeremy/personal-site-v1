@@ -149,6 +149,7 @@ a:hover {
 }
 
 .project-name {
+    font-family: SF-Pro-Display-Bold;
     margin: 0;
 }
 
@@ -167,6 +168,18 @@ a:hover {
 /* Project Tech Icons */
 span > img.icon {
     margin: 0 2.5px;
+}
+
+span > img.celery {
+    height: 17px;
+    width: 17px;
+    transition: 175ms;
+}
+
+span > img.celery:hover {
+    height: 21.25px;
+    width: 21.25px;
+    transition: 175ms;
 }
 
 span > img.firebase {
@@ -205,6 +218,18 @@ span > img.ocaml:hover {
     transition: 175ms;
 }
 
+span > img.python {
+    height: 17px;
+    width: 17px;
+    transition: 175ms;
+}
+
+span > img.python:hover {
+    height: 21.25px;
+    width: 21.25px;
+    transition: 175ms;
+}
+
 span > img.react {
     height: 17px;
     width: 19px;
@@ -214,6 +239,18 @@ span > img.react {
 span > img.react:hover {
     height: 21.25px;
     width: 23.75px;
+    transition: 175ms;
+}
+
+span > img.redis {
+    height: 17px;
+    width: 19.67px;
+    transition: 175ms;
+}
+
+span > img.redis:hover {
+    height: 21.25px;
+    width: 24.6px;
     transition: 175ms;
 }
 
@@ -229,6 +266,30 @@ span > img.redux:hover {
     transition: 175ms;
 }
 
+span > img.sklearn {
+    height: 17px;
+    width: 31.58px;
+    transition: 175ms;
+}
+
+span > img.sklearn:hover {
+    height: 21.25px;
+    width: 39.47px;
+    transition: 175ms;
+}
+
+span > img.spotify {
+    height: 17px;
+    width: 16.52px;
+    transition: 175ms;
+}
+
+span > img.spotify:hover {
+    height: 21.25px;
+    width: 20.65px;
+    transition: 175ms;
+}
+
 span > img.swift {
     height: 17px;
     width: 17px;
@@ -241,13 +302,13 @@ span > img.swift:hover {
     transition: 175ms;
 }
 
-span > img.yelp-fusion {
+span > img.yelp {
     height: 17px;
     width: 12.8px;
     transition: 175ms;
 }
 
-span > img.yelp-fusion:hover {
+span > img.yelp:hover {
     height: 21.25px;
     width: 16px;
     transition: 175ms;

@@ -1,64 +1,97 @@
 import React from 'react';
 
 
-// Create icons
-let firebase = <img className='icon ocaml'
-                 src={ require('../images/firebase.png') }
-                 alt='Firebase'
-                 key='Firebase'
-            />;
+const celery = <img className='icon celery'
+                    src={ require('../images/celery.png') }
+                    alt='Celery'
+                    key='Celery'
+               />;
 
-let node = <img className='icon ocaml'
-                 src={ require('../images/node.png') }
-                 alt='Node'
-                 key='Node'
-            />;
+const firebase = <img className='icon firebase'
+                      src={ require('../images/firebase.png') }
+                      alt='Firebase'
+                      key='Firebase'
+                 />;
 
-let ocaml = <img className='icon ocaml'
-                 src={ require('../images/ocaml.png') }
-                 alt='OCaml'
-                 key='OCaml'
-            />;
+const node = <img className='icon node'
+                  src={ require('../images/node.png') }
+                  alt='Node'
+                  key='Node'
+             />;
 
-let react = <img className='icon ocaml'
-                 src={ require('../images/react.png') }
-                 alt='React'
-                 key='React'
-            />;
+const ocaml = <img className='icon ocaml'
+                   src={ require('../images/ocaml.png') }
+                   alt='OCaml'
+                   key='OCaml'
+              />;
 
-let redux = <img className='icon ocaml'
-                 src={ require('../images/redux.png') }
-                 alt='Redux'
-                 key='Redux'
-            />;
+const python = <img className='icon python'
+                    src={ require('../images/python.png') }
+                    alt='Python'
+                    key='Python'
+               />;
 
-let swift = <img className='icon ocaml'
-                 src={ require('../images/swift.png') }
-                 alt='Swift'
-                 key='Swift'
-            />;
+const react = <img className='icon react'
+                   src={ require('../images/react.png') }
+                   alt='React'
+                   key='React'
+              />;
 
-let yelpFusion = <img className='icon ocaml'
-                 src={ require('../images/yelp-fusion.png') }
-                 alt='Yelp Fusion'
-                 key='Yelp Fusion'
-            />;
-// Place icons in object
-let icons = {
+const redis = <img className='icon redis'
+                   src={ require('../images/redis.png') }
+                   alt='Redis'
+                   key='Redis'
+              />;
+
+const redux = <img className='icon redux'
+                   src={ require('../images/redux.png') }
+                   alt='Redux'
+                   key='Redux'
+              />;
+
+const sklearn = <img className='icon sklearn'
+                     src={ require('../images/scikit-learn.png') }
+                     alt='Scikit-Learn'
+                     key='Scikit-Learn'
+                />;
+
+const spotify = <img className='icon spotify'
+                     src={ require('../images/spotify.png') }
+                     alt='Spotify'
+                     key='Spotify'
+                />;
+
+const swift = <img className='icon swift'
+                   src={ require('../images/swift.png') }
+                   alt='Swift'
+                   key='Swift'
+              />;
+
+const yelp = <img className='icon yelp'
+                  src={ require('../images/yelp.png') }
+                  alt='Yelp'
+                  key='Yelp'
+             />;
+
+const icons = {
+    'celery': celery,
     'firebase': firebase,
     'node': node,
     'ocaml': ocaml,
+    'python': python,
     'react': react,
+    'redis': redis,
     'redux': redux,
+    'sklearn': sklearn,
+    'spotify': spotify,
     'swift': swift,
-    'yelpFusion': yelpFusion
+    'yelp': yelp
 };
 
 export const ProjectTech = ({ tech }) => {
-    if (tech === undefined) { return <span></span>; }
-    // Create values array based on tech
+    if (tech === undefined) {
+        return <span></span>;
+    }
     let specifiedIcons = tech.map(key => icons[key]);
-
-    // Return element
     return <span>{specifiedIcons.map(element => element)}</span>;
 };

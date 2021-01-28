@@ -233,7 +233,8 @@
             "duration": "January 2019 - March 2019",
             "endDate": 201903,
             "description": [
-                "A full-stack web app that automates various components of the course scheduling process. I worked closely with another classmate and my high school’s administration to help them improve efficiency during the course selection period."
+                "A full-stack web app that digitizes and automates various components of the course scheduling process.",
+                "I worked closely with another classmate and my high school's administration to improve efficiency during the course selection period. It was built primarily in Node.js, was hosted on Firebase, and processed a ~50-page spreadsheet of course information and class period availability as input."
             ]
         },
         {
@@ -243,7 +244,9 @@
             "duration": "July 2019 - Present",
             "startDate": 201907,
             "description": [
-                "A website showcasing various parts of my personal and professional life."
+                "A website showing and documenting various parts of my personal and professional life.",
+                "I originally wrote this as a pure HTML/CSS/JS site but rewrote it entirely with React a few months later. I had only really started coding the previous year, so this site served as a great way to learn React and frontend web development.",
+                "Since then, I've enjoyed updating this site every so often to accommodate different forms of content, undergo new design changes, as well as to document parts of my life."
             ]
         },
         {
@@ -253,18 +256,21 @@
             "duration": "November 2019 - December 2019",
             "featured": 3,
             "description": [
-                "An iOS app serving as a centralized database for roommates with features including roommate profiles, embedded messaging, and shared task lists."
+                "An iOS app serving as a centralized hub for roommates with features including roommate profiles, embedded messaging, and shared task lists.",
+                "I wrote RoommateHub with another classmate for our CS 50 final project. I learned a lot about writing a multi-page app in Swift using UIKit and leveraging Firebase to handle secure authentication and database management.",
+                "As an Apple fanboy, the euphoria I got (and still get) from using well designed and executed Mac and iOS apps is what drove me to start programming in the first place. As a result, getting to collaborate with a close friend on all aspects of our own iOS app (ideation, UI/UX design, system design, implementation) was an incredible experience."
             ],
             "endDate": 201912
         },
         {
             "emoji": "🍱",
             "name": "FoodSpace",
-            "tech": [ "firebase", "node", "react", "redux" ],
+            "tech": [ "firebase", "node", "react", "redux", "yelp" ],
             "duration": "December 2019 - January 2020",
             "endDate": 202001,
             "description": [
-                "A full-stack web app that streamlines the process of ordering food. Integrating the Yelp Fusion API, users can find restaurants based on various criteria and schedule meal times on their calendar based on the hours for that specific place and time."
+                "A full-stack web app that streamlines the process of ordering food. Integrating the Yelp Fusion API, users can find restaurants based on various criteria and schedule meal times on their calendar based on the hours for that specific place and time.",
+                "I wrote FoodSpace at home following my first semester at college. It was a fairly simple web project, but at the time, it helped me learn more about backend development in Node.js, HTTP requests between the server and client, and calling external APIs."
             ]
         },
         {
@@ -275,7 +281,21 @@
             "featured": 2,
             "endDate": 202005,
             "description": [
-                "An interpreter for OCaml following the substitution, lexically-scoped environment, and dynamically-scoped environment semantic models."
+                "A series of Turing-complete interpreters for a subset of the OCaml programming language following the substitution, lexically-scoped environment, and dynamically-scoped environment semantic models. MiniML displays a graphical REPL on the command line, where users can issue OCaml commands to be executed by all three interpreters.",
+                "I wrote this as my CS 51 final project. For about ten days, my life revolved solely around MiniML, and loose paper sketches of semantic model implementation mimicked legos around my room when I was a kid. The project gave me a more in-depth understanding of OCaml and its underlying principles, such as functional semantics, environment models, and type checking.",
+                "Somewhat ironically (or not so ironically), the project also gave me a greater appreciation for the language features I didn't have time to support, such as sugaring, references, and lazy computation."
+            ]
+        },
+        {
+            "emoji": "🎧",
+            "name": "ML-Enabled Spotify Curator",
+            "tech": [ "python", "react", "celery", "redis", "spotify", "sklearn" ],
+            "duration": "December 2020 - Present",
+            "featured": 1,
+            "startDate": 202012,
+            "description": [
+                "A full-stack web application using k-means clustering to help users discover new songs they love. After signing in with their Spotify credentials, users can enter any number of songs, and the app will return the probability that they will like each entered song, based on the musical attributes (energy, tempo, instrumentalness, etc.) of their previously liked songs.",
+                "I'm currently finalizing this project with a friend. He implemented most of the ML model and the frontend, and I handled implementing the backend and stringing everything together. This project gave me the chance to practice my backend development, and I also learned about setting up distributed task queues with Celery and using Redis as a message broker transport and result store to deploy the ML model asynchronously."
             ]
         }
     ]
