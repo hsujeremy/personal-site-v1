@@ -30,7 +30,7 @@ let eHref = 'mailto: jeremyhsu@college.harvard.edu';
 
 export const ProfessionalBlock = () => (
     <div className='block'>
-        <div className='header'>Professional Info</div>
+        <div className='header'>Professional Life</div>
         <p className='multi-content'>
             Since last May, I've been interning as a software engineer at <Hyperlink cl={cClass} href={cHref} text={cText} /> on
             the <Hyperlink cl={wClass} href={wHref} text={wText} /> team. At Cisco, my responsibilities span a variety of

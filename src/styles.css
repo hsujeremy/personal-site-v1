@@ -144,20 +144,23 @@ a:hover {
 }
 
 /* Project Component */
-.project > .project-name {
+.project {
+    padding-bottom: 1%;
+}
+
+.project-name {
     margin: 0;
 }
 
-.project > .project-content {
-    padding-left: 2.5%;
+.project-content {
+    padding-left: 27px;
     margin: 0;
 }
 
-.project > .multi-content {
+.multi-content {
     margin-bottom: 1%;
 }
-
-.project > .project-duration {
+.project-duration {
     color: #6B6B6B;
 }
 
@@ -253,10 +256,4 @@ span > img.yelp-fusion:hover {
 /* Book */
 span.author {
     color: #6B6B6B;
-}
-
-/* Footer */
-.footer {
-    position: fixed;
-    bottom: 5%;
 }

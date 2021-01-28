@@ -45,7 +45,7 @@ export class ProjectsPage extends Component {
                     <div>{createProjectList(currentProjects)}</div>
                 </div>
                 <div className='block'>
-                    <div className='header'>Completed / Archived</div>
+                    <div className='header'>Completed or Archived</div>
                     <div>{createProjectList(pastProjects)}</div>
                 </div>
             </div>
