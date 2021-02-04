@@ -41,6 +41,12 @@ export class ProjectsPage extends Component {
             <div className='content'>
                 <Banner keywords={['All Projects']} loop={false} />
                 <div className='block'>
+                    <div>
+                        In 2021, I want to take on personal projects that help me learn more about backend development, iOS
+                        development, and how to leverage cloud services such as AWS and Google Cloud Platform.
+                    </div>
+                </div>
+                <div className='block'>
                     <div className='header'>In Active Development</div>
                     <div>{createProjectList(currentProjects)}</div>
                 </div>
