@@ -25,12 +25,13 @@ export class ProjectsPage extends Component {
         );
 
         let compareRecency = (project1, project2) => {
-            if (!project1.endDate && !project2.endDate)
+            if (!project1.endDate && !project2.endDate) {
                 return project2.startDate - project1.startDate;
-            else if (!project1.endDate)
+            } else if (!project1.endDate) {
                 return -1;
-            else if (!project2.endDate)
+            } else if (!project2.endDate) {
                 return 1;
+            }
             return project2.endDate - project1.endDate;
         }
 
@@ -42,8 +43,8 @@ export class ProjectsPage extends Component {
                 <Banner keywords={['All Projects']} loop={false} />
                 <div className='block'>
                     <div>
-                        In 2021, I want to take on personal projects that help me learn more about backend development, iOS
-                        development, and how to leverage cloud services such as AWS and Google Cloud Platform.
+                        In 2021, I want to take on personal projects that help me learn more about backend development,
+                        iOS development, and how to leverage cloud services such as AWS and Google Cloud Platform.
                     </div>
                 </div>
                 <div className='block'>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { Emoji } from './Emoji';
 import { Hyperlink } from './Hyperlink';
 import Pdf from '../assets/Jeremy-Hsu-Resume.pdf';
@@ -45,8 +46,11 @@ export const ProfessionalBlock = () => (
         <p>
             <Emoji symbol='🎬 ' /> {linkedin} · {github} · {resume}
         </p>
-        <p>
+        <p className='multi-content'>
             <Emoji symbol='📮 ' /> Email: <a href={eHref}> jeremyhsu@college.harvard.edu </a>
+        </p>
+        <p>
+            <Link to='/experience'>All Experience</Link>
         </p>
     </div>
 );
