@@ -166,6 +166,15 @@ a:hover {
     color: #6B6B6B;
 }
 
+/* Handle indents */
+.indent1 {
+    padding-left: 54px
+}
+
+.indent2 {
+    padding-left: 81px;
+}
+
 /* Project Tech Icons */
 span > img.icon {
     margin: 0 2.5px;

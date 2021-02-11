@@ -16,10 +16,24 @@ export const Job = props => {
         return result;
     }
 
+    let formatParagraph = (paragraph, indent) => {
+        let className = 'job-content multi-content indent' + indent;
+        if (typeof paragraph === 'string') {
+            if (indent === 0) {
+                return (<p className={className} key={createUniqueKey(paragraph)}>
+                            {paragraph}
+                        </p>);
+            }
+            return (<p className={className} key={createUniqueKey(paragraph)}>
+                        {paragraph}
+                    </p>);
+        }
+        indent++;
+        return paragraph.map(nestedParagraph => formatParagraph(nestedParagraph, indent));
+    }
+
     let formatDescription = description =>
-        description.map(paragraph => (<p className='job-content multi-content' key={createUniqueKey(paragraph)}>
-                                          {paragraph}
-                                      </p>));
+        description.map(paragraph => formatParagraph(paragraph, 0));
 
     return (
         <div className='job'>
