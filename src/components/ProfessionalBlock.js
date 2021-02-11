@@ -33,15 +33,13 @@ export const ProfessionalBlock = () => (
     <div className='block'>
         <div className='header'>Professional Life</div>
         <p className='multi-content'>
-            Since last May, I've been interning as a software engineer at <Hyperlink cl={cClass} href={cHref} text={cText} /> on
-            the <Hyperlink cl={wClass} href={wHref} text={wText} /> team. At Cisco, my responsibilities span a variety of
-            projects, but my main contributions so far have involved expanding and automating components of our internal
-            triage and debugging tools as well as helping to monitor media quality performance metrics and troubleshoot
-            problem areas.
+            I’m currently interning as a software engineer at <Hyperlink cl={cClass} href={cHref} text={cText} /> on
+            the <Hyperlink cl={wClass} href={wHref} text={wText} /> team. So far, I’ve been primarily working on internal
+            debug and triage tools and the media quality data pipeline.
         </p>
         <p className='multi-content'>
-            This summer, I'm looking to conduct research with the Harvard Cloud Networking and Systems group.
-            I'm also seeking a software engineering internship role!
+            This summer, I'll be conducting research in the Harvard Cloud Networking and Systems Lab. I'm also currently
+            seeking a software engineering internship.
         </p>
         <p>
             <Emoji symbol='🎬 ' /> {linkedin} · {github} · {resume}

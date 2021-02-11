@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Banner } from './Banner';
 import { Job } from './Job';
+import data from '../assets/content-data.json';
 
 
 export class ProfessionalPage extends Component {
@@ -10,29 +11,28 @@ export class ProfessionalPage extends Component {
     }
 
     render() {
+        let createPositionList = positions => (
+            positions.map(position => (
+                <Job emoji={position.emoji}
+                     company={position.company}
+                     position={position.position}
+                     team={position.team}
+                     duration={position.duration}
+                     description={position.description}
+                />
+            ))
+        );
+
         return (
             <div className='content'>
                 <Banner keywords={['Experience']} loop={false} />
                 <div className='block'>
                     <div className='header'>Industry</div>
-
-                    <Job company='Cisco Systems'
-                         position='Software Engineer Intern'
-                         team='Webex Media Engine'
-                         emoji='🎥'
-                         duration='May 2020 - Present'
-                         description={['A lot of code.']}
-                    />
+                    {createPositionList(data.experience.work)}
                 </div>
                 <div className='block'>
                     <div className='header'>Research</div>
-
-                    <Job company='Harvard Cloud Networking and Systems Group'
-                         position='Research Assistant'
-                         emoji='🎒'
-                         duration='Starting in May'
-                         description={["Will conduct research under Professor Minlan Yu."]}
-                    />
+                    {createPositionList(data.experience.research)}
                 </div>
             </div>
 

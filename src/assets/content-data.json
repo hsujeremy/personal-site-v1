@@ -298,5 +298,35 @@
                 "I'm currently finalizing this project with a friend. He implemented most of the ML model and the frontend, and I handled implementing the backend and stringing everything together. This project gave me the chance to practice my backend development, and I also learned about setting up distributed task queues with Celery and using Redis as a message broker transport and result store to deploy the ML model asynchronously."
             ]
         }
-    ]
+    ],
+    "experience": {
+        "work": [
+            {
+                "emoji": "🎥",
+                "company": "Cisco Systems",
+                "position": "Software Engineer Intern",
+                "team": "Webex Media Engine",
+                "duration": "May 2020 - Present",
+                "description": [
+                    "I've been interning at Cisco since May. The team I'm on develops the Webex Media Engine (WME), a cross-platform media SDK for both server and client, currently serving Webex Meetings and Teams.",
+                    "Being around for an extended period has allowed me to develop and maintain multiple projects. So far, my work primarily spans two areas:",
+                    [
+                        "WME Media Quality Data Pipeline: I am working on multiple stages of the pipeline such as debugging native WME Metrics code in production, writing Python data aggregation scripts to accelerate ElasticSearch data reads, and creating interactive Kibana dashboards to visualize these metrics and look out for potentially troubling performance trends.",
+                        "WME Internal Debug and Triage Tools: I have been implementing new modules, maintaining existing ones, and building Jenkins pipelines to open these tools to a broader audience within the Webex team. These tools save Webex engineers hours each day by automating frequent processes such as searching and downloading available call logs, detecting errors and abnormalities, and triaging them into relevant problem categories."
+                    ]
+                ]
+            }
+        ],
+        "research": [
+            {
+                "emoji": "🎒",
+                "company": "Harvard Cloud Networking and Systems Group",
+                "position": "Research Assistant",
+                "duration": "Starting in May",
+                "description": [
+                    "I will be starting in May under Professor Minlan Yu and am currently reading papers related to my eventual project."
+                ]
+            }
+        ]
+    }
 }
