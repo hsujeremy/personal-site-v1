@@ -246,7 +246,8 @@
             "description": [
                 "A website showing and documenting various parts of my personal and professional life.",
                 "I originally wrote this as a pure HTML/CSS/JS site but rewrote it entirely with React a few months later. I had only really started coding the previous year, so this site served as a great way to learn React and frontend web development.",
-                "Since then, I've enjoyed updating this site every so often to accommodate different forms of content, undergo new design changes, as well as to document parts of my life."
+                "Since then, I've enjoyed updating this site every so often to accommodate different forms of content, undergo new design changes, as well as to document parts of my life.",
+                "Also, I'm aware that the mobile experience right now isn't too great. Hang tight, I'm working on it!"
             ]
         },
         {
@@ -311,8 +312,8 @@
                     "I've been interning at Cisco since May. The team I'm on develops the Webex Media Engine (WME), a cross-platform media SDK for both server and client, currently serving Webex Meetings and Teams.",
                     "Being around for an extended period has allowed me to develop and maintain multiple projects. So far, my work primarily spans two areas:",
                     [
-                        "WME Media Quality Data Pipeline: I am working on multiple stages of the pipeline such as debugging native WME Metrics code in production, writing Python data aggregation scripts to accelerate ElasticSearch data reads, and creating interactive Kibana dashboards to visualize these metrics and look out for potentially troubling performance trends.",
-                        "WME Internal Debug and Triage Tools: I have been implementing new modules, maintaining existing ones, and building Jenkins pipelines to open these tools to a broader audience within the Webex team. These tools save Webex engineers hours each day by automating frequent processes such as searching and downloading available call logs, detecting errors and abnormalities, and triaging them into relevant problem categories."
+                        "WME Media Quality Data Pipeline: I'm working on multiple stages of the pipeline such as debugging native WME Metrics code, writing Python data aggregation scripts to accelerate ElasticSearch data reads, and creating interactive Kibana dashboards to visualize these metrics and look out for potentially troubling performance trends.",
+                        "WME Internal Debug and Triage Tools: I've been implementing new modules, maintaining existing ones, and building Jenkins pipelines to open these tools to a broader audience within the Webex team. These tools save Webex engineers hours each day by automating frequent processes such as searching and downloading available call logs, detecting errors and abnormalities, and triaging them into relevant problem categories."
                     ]
                 ]
             }
@@ -321,10 +322,10 @@
             {
                 "emoji": "🎒",
                 "company": "Harvard Cloud Networking and Systems Group",
-                "position": "Research Assistant",
+                "position": "Undergraduate Researcher",
                 "duration": "Starting in May",
                 "description": [
-                    "I will be starting in May under Professor Minlan Yu and am currently reading papers related to my eventual project."
+                    "I'll be starting in May under Professor Minlan Yu and am currently reading papers related to my eventual project."
                 ]
             }
         ]
