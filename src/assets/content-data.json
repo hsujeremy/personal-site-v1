@@ -291,13 +291,22 @@
             "emoji": "🎧",
             "name": "ML-Enabled Spotify Curator",
             "tech": [ "python", "react", "celery", "redis", "spotify", "sklearn" ],
-            "duration": "December 2020 - Present",
+            "duration": "December 2020 - January 2021",
             "featured": 1,
             "startDate": 202012,
+            "endDate": 202101,
             "description": [
                 "A full-stack web application using k-means clustering to help users discover new songs they love. After signing in with their Spotify credentials, users can enter any number of songs, and the app will return the probability that they will like each entered song, based on the musical attributes (energy, tempo, instrumentalness, etc.) of their previously liked songs.",
-                "I'm currently finalizing this project with a friend. He implemented most of the ML model and the frontend, and I handled implementing the backend and stringing everything together. This project gave me the chance to practice my backend development, and I also learned about setting up distributed task queues with Celery and using Redis as a message broker transport and result store to deploy the ML model asynchronously."
+                "I worked on this project with a friend. He implemented most of the ML model and the frontend, and I handled implementing the backend and stringing everything together. This project gave me the chance to practice my backend development, and I also learned about setting up distributed task queues with Celery and using Redis as a message broker transport and result store to deploy the ML model asynchronously."
             ]
+        },
+        {
+            "emoji": "📇",
+            "name": "Article Bias Chrome Extension",
+            "tech": [],
+            "duration": "March 2021 - Present",
+            "startDate": 202103,
+            "description": ["A chrome extension that will use NLP to detect political biases in articles."]
         }
     ],
     "experience": {

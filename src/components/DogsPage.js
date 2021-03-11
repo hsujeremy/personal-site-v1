@@ -15,7 +15,7 @@ export class DogsPage extends Component {
                 <div className='block'>
                     <p className='multi-content'>
                         Yup, I do have dogs. They're two fluffy boys named Bao Bao and Di Di. They're pretty great, and
-                        also sleep a ton. Good for them.
+                        also sleep a ton. Good on them.
                     </p>
                     <p className='multi-content'>
                         I also tend to procrastinate on putting stuff on this site. At least the link from the homepage
