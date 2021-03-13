@@ -1,37 +1,51 @@
 /* Font Families */
 @font-face {
     font-family: SF-Pro-Display-Light;
-    src: url('./fonts/SF-Pro-Display-Light.otf');
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: url('./fonts/SF-Pro-Display-Light.woff') format('woff');
 }
 
 @font-face {
     font-family: SF-Pro-Display-Regular;
-    src: url('./fonts/SF-Pro-Display-Regular.otf');
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: url('./fonts/SF-Pro-Display-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: SF-Pro-Display-Medium;
-    src: url('./fonts/SF-Pro-Display-Medium.otf');
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: url('./fonts/SF-Pro-Display-Medium.woff') format('woff');
 }
 
 @font-face {
     font-family: SF-Pro-Display-Semibold;
-    src: url('./fonts/SF-Pro-Display-Semibold.otf');
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: url('./fonts/SF-Pro-Display-Semibold.woff') format('woff');
 }
 
 @font-face {
     font-family: SF-Pro-Display-Bold;
-    src: url('./fonts/SF-Pro-Display-Bold.otf');
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: url('./fonts/SF-Pro-Display-Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: SF-Pro-Display-Heavy;
-    src: url('./fonts/SF-Pro-Display-Heavy.otf');
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: url('./fonts/SF-Pro-Display-Heavy.woff') format('woff');
 }
 
 @font-face {
     font-family: SF-Pro-Display-Black;
-    src: url('./fonts/SF-Pro-Display-Black.otf');
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: url('./fonts/SF-Pro-Display-Black.woff') format('woff');
 }
 
 /* On styling fonts:
