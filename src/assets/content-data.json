@@ -312,17 +312,27 @@
     "experience": {
         "work": [
             {
+                "emoji": "🍀",
+                "company": "Lime",
+                "position": "Software Engineer Intern",
+                "team": "Team TBD",
+                "duration": "Starting in May",
+                "description": [
+                    "I'll be interning here this summer, working on backend development."
+                ]
+            },
+            {
                 "emoji": "🎥",
-                "company": "Cisco Systems",
+                "company": "Cisco",
                 "position": "Software Engineer Intern",
                 "team": "Webex Media Engine",
                 "duration": "May 2020 - Present",
                 "description": [
-                    "I've been interning at Cisco since May. The team I'm on develops the Webex Media Engine (WME), a cross-platform media SDK for both server and client, currently serving Webex Meetings and Teams.",
-                    "Being around for an extended period has allowed me to develop and maintain multiple projects. So far, my work primarily spans two areas:",
+                    "At Cisco, the team I'm on develops with Webex Media Engine (WME), a cross-platform multimedia SDK serving Webex Meetings and Teams. Currently, I'm working on implementing a testing framework in C++ for WME's Acoustic Echo Canceler for macOS and Windows builds.",
+                    "I've previously completed projects in these two areas:",
                     [
-                        "WME Media Quality Data Pipeline: I'm working on multiple stages of the pipeline such as debugging native WME Metrics code, writing Python data aggregation scripts to accelerate ElasticSearch data reads, and creating interactive Kibana dashboards to visualize these metrics and look out for potentially troubling performance trends.",
-                        "WME Internal Debug and Triage Tools: I've been implementing new modules, maintaining existing ones, and building Jenkins pipelines to open these tools to a broader audience within the Webex team. These tools save Webex engineers hours each day by automating frequent processes such as searching and downloading available call logs, detecting errors and abnormalities, and triaging them into relevant problem categories."
+                        "WME Media Quality Data Pipeline: I worked on projects in multiple stages on the pipeline, such as debugging WME code in C++, working with a few other teammates from China to implement and deploy ElasticSearch data aggregation scripts with Python and Airflow, and creating interactive Kibana dashboards to visualize and monitor key quality and performance metrics. These projects and dashboards have helped our team better monitor WME performance and more quickly spot troubling trends.",
+                        "WME Internal Debug and Triage Tools: I implemented new and updated existing automation and analyzer scripts in Python and have built multiple Jenkins pipelines to allow more engineers within Webex to leverage them. The tools save WME engineers many hours each day by automating frequent processes such as searching and downloading call logs and crash reports, detecting errors and abnormalities in them, and triaging them into relevant problem categories."
                     ]
                 ]
             }
@@ -332,9 +342,9 @@
                 "emoji": "🎒",
                 "company": "Harvard Cloud Networking and Systems Group",
                 "position": "Undergraduate Researcher",
-                "duration": "Starting in May",
+                "duration": "February 2021 - Present",
                 "description": [
-                    "I'll be starting in May under Professor Minlan Yu and am currently reading papers related to my eventual project."
+                    "I'm working under Professor Minlan Yu and am researching how to leverage RPC system queues to identify network performance issues such as noisy neighbor effects and head-of-line blocking."
                 ]
             }
         ]
